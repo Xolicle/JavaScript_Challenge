@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Challenge6</title>
+<style>
+body {
+text-align: center;
+}
+button {
+margin-top: 200px;
+}
+</style>
+</head>
+<body>
+<button onclick = "fromNumberToHour()">Click to enter a number</button>
+<p id= "demo"></p>
+
+<script>
+
+function fromNumberToHour(num) {
+
+var num = prompt("Enter a number to get hours and minutes");
+var hour = Math.floor(num / 60);
+var min = (num % 60)  ;
+var hourMin = hour + " h : "+ min + " m";
+
+document.getElementById("demo").innerHTML = hourMin;
+
+} 
+</script>
+
+</body>
+</html>

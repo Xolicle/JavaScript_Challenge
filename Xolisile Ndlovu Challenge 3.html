@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Umuzi Challenge3</title>
+<style>
+body{
+text-align: center;
+}
+div{
+display: inline-block;
+margin: 100px 100px;
+padding: 50px 100px;
+background-color: lightgreen;
+max-width: 700px;
+text-align: center;
+
+}
+</style>
+</head>
+<body>
+<div>
+<p>Click the button to enter a random word, if it starts with "Java" you will get true, otherwise false</p>
+
+<button onclick="checkWord()">Click Me!</button>
+
+<p id= "checker"></p>
+</div>
+
+<script>
+function checkWord() {
+var word = prompt("Enter a word to check if it start with Java");
+var str = word.startsWith("Java");
+document.getElementById("checker").innerHTML = str;}
+
+</script>
+</body>
+</html>

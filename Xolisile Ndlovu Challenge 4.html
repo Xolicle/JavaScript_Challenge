@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Challenge 4</title>
+</head>
+<body>
+
+
+Number 1: <input type = "number" id = "a" ><br><br>
+Number 2: <input type = "number" id = "b"><br><br>
+Number 3: <input type = "number" id = "c"><br><br>
+ 
+
+<button onclick="largestNum()">Click Here!</button>
+
+<p id= "aNumber"></p>
+
+<script>
+function largestNum() {
+
+var maxNum = 0;
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var c = document.getElementById("c").value;
+
+/*var a = prompt("Enter first number");
+var b = prompt("Enter second number");
+var c = prompt("Enter third number");*/
+
+if ( a > b) {
+maxNum = a;
+}
+
+else {
+maxNum = b;
+}
+
+if (c > maxNum) {
+maxNum = c;
+}
+document.getElementById("aNumber").innerHTML = maxNum;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Umuzi Challenge1</title>
+</head>
+<body>
+<p>Today is: <span id= "dayOfWeek"></span>. Current time is: <span id= "theTime"></span></p>
+<script>
+var today = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursaday", "Friday", "Saturday"];
+document.getElementById("dayOfWeek").innerHTML = days[today.getDay()];
+
+<!--function timeOfTheDay {-->
+<!--var todayTime = new Date()-->
+var meridiem = "AM";
+var sec = today.getSeconds();
+var hour = today.getHours();
+var min = today.getMinutes();
+
+if (hour >= 12) {
+meridiem = "PM";}
+
+if (hour == 0) {
+hour = 12,
+meridiem = "AM"; }
+document.getElementById("theTime").innerHTML = hour + " "+ meridiem + ":"+ min +":"+ sec;
+
+</script>  
+</body>
+</html>

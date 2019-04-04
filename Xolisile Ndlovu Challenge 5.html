@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Umuzi Challenge5</title>
+<body >
+
+<button onclick ="toCapitalize()">Click Here!</button>
+
+<p id= "capitalize"></p>
+
+
+<script>
+function toCapitalize(sentence) {
+var sentence = prompt("Enter a sentence");
+
+sentence = sentence.toLowerCase();
+sentence = sentence.split(' ');
+
+for (var i = 0; i < sentence.length; i++) {
+sentence[i] = sentence[i].charAt(0).toUpperCase() + sentence[i].slice(1);
+}
+ var com = sentence.join(' ');
+document.getElementById("capitalize").innerHTML = com;
+
+}
+
+
+</script>
+</body>
+</html>
